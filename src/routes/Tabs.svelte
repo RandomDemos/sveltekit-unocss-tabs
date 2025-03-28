@@ -19,7 +19,7 @@
         class="opacity-0 absolute"
       />
       <span
-        class="text-[1.25rem] px-1.5rem py-0.6rem rounded-[0.65rem] bg-[#ddeeef]"
+        class="text-1.25rem px-1.5rem py-0.6rem rounded-0.65rem bg-[#ddeeef]"
       >
         {tabId}
       </span>
