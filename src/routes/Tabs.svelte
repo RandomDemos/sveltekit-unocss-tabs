@@ -7,7 +7,7 @@
   let tab = 'First'
 </script>
 
-<nav class="p-1em flex gap-1em">
+<nav class="flex gap-1em p-1em">
   {#each tabs as tabId (tabId)}
     <label class="relative">
       <input
@@ -16,10 +16,10 @@
         name="tabs"
         value={tabId}
         id={tabId}
-        class="opacity-0 absolute"
+        class="absolute opacity-0"
       />
       <span
-        class="text-1.25rem px-1.5rem py-0.6rem rounded-0.65rem bg-[#ddeeef]"
+        class="rounded-0.65rem bg-[#ddeeef] px-1.5rem py-0.6rem text-1.25rem"
       >
         {tabId}
       </span>
@@ -32,5 +32,9 @@
 <style>
   input:focus + span {
     outline: 2px solid #000;
+  }
+
+  input:checked + span {
+    background-color: pink;
   }
 </style>
